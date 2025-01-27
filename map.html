@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Know a Place (IKAP) - Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>I Know a Place (IKAP)</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="set-map.html">Set Map</a></li>
+                <li><a href="map.html">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="map-container" style="height: 500px; width: 100%;"></div>
+
+
+    <main>
+        <section id="map-section">
+            <h2>Your Adventure Map</h2>
+            <div id="map-container">
+                <!-- Map will be rendered here dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 I Know a Place (IKAP). All rights reserved.</p>
+    </footer>
+</body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbMyoy1d3Rgn252agiPano3ddjx-ibGFw&callback=initMap" async defer></script>
+
+</html>
