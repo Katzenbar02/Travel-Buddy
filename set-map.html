@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Know a Place (IKAP) - Set Map</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I Know a Place (IKAP) - Plan Your Trip</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>I Know a Place (IKAP)</h1>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="set-map.html">Set Map</a></li>
-                <li><a href="map.html">Map</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="set-map-section">
-            <h2>Set Your Map</h2>
-            <form id="setMapForm">
-                <label for="start-location">Start Location:</label>
-                <input type="text" id="start-location" name="start-location" placeholder="Enter start location" required>
-
-                <label for="end-location">Destination:</label>
-                <input type="text" id="end-location" name="end-location" placeholder="Enter destination" required>
-
-                <button type="submit">Set Route</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 I Know a Place (IKAP). All rights reserved.</p>
-    </footer>
+  <header>
+    <h1>I Know a Place (IKAP)</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="set-map.html">Plan Trip</a></li>
+        <li><a href="map.html">Map</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="trip-planner">
+      <h2>Plan Your Trip</h2>
+      <form id="setMapForm">
+        <label for="start-location">Starting Location:</label>
+        <input type="text" id="start-location" name="start-location" placeholder="Enter starting location" required />
+        <label for="end-location">Destination:</label>
+        <input type="text" id="end-location" name="end-location" placeholder="Enter destination" required />
+        <button type="submit">Set Route</button>
+      </form>
+      <div id="map-container" style="height: 500px; width: 100%; margin-top: 1rem;"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 I Know a Place (IKAP). All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <!-- Replace YOUR_API_KEY with your actual Google Maps API key -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 </body>
 </html>

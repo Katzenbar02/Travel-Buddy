@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suggest a Cool Place - I Know a Place (IKAP)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>I Know a Place (IKAP)</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="set-map.html">Plan Trip</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="suggestions.html">Cool Places</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="suggestion-form">
+      <h2>Suggest a Cool Place</h2>
+      <form id="suggestionForm">
+        <label for="place-name">Place Name:</label>
+        <input type="text" id="place-name" name="place-name" placeholder="Enter place name" required />
+        
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" placeholder="Enter a description" required></textarea>
+        
+        <label for="latitude">Latitude:</label>
+        <input type="number" id="latitude" name="latitude" placeholder="Enter latitude" step="any" required />
+        
+        <label for="longitude">Longitude:</label>
+        <input type="number" id="longitude" name="longitude" placeholder="Enter longitude" step="any" required />
+        
+        <button type="submit">Submit Suggestion</button>
+      </form>
+    </section>
+    <section id="suggested-places">
+      <h2>Cool Places Near BYUI</h2>
+      <div id="placesList">
+        <!-- Suggested places will be loaded here -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 I Know a Place (IKAP). All rights reserved.</p>
+  </footer>
+  <script src="suggestions.js"></script>
+</body>
+</html>
